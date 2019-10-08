@@ -1,0 +1,25 @@
+<h1>Let's See </h1>
+
+<div class="container d-flex flex-column align-items-center">
+    {{#each hacks}}
+    <div class="card card-body" style="width: 50vw">
+        <div>
+            <h5>Question:</h5>
+            <p>{{title}}</p>
+        </div>
+        <h5>Asked By:</h5>
+        <p>{{author}}</p>
+        <h5>Answers</h5>
+
+        <p>{{body}}</p>
+        <a class="btn btn-dark btn-block mb-2" href="edit/{{id}}">Answer It</a>
+        <form action="/{{id}}?_method=DELETE" method="post">
+            <input type="submit" class="btn btn-danger btn-block" value="Delete">
+        </form>
+    </div>
+    {{else}}
+    <p>No Questions So Far...</p>
+    {{/each}}
+</div>
+
+<button type="button" class="btn btn-light"><a href="/new">Ask a Question</a></button>
