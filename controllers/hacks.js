@@ -3,7 +3,7 @@ const router = express.Router();
 const hackModel = require("../models/hackModel");
 module.exports = router;
 
-//Index Route
+//Homepage Route
 router.get("/", (req, res) => {
   hackModel
     .find({})
@@ -12,7 +12,7 @@ router.get("/", (req, res) => {
     })
     .catch(err => console.log(err));
 });
-//Update Route
+//Update/Edit
 router.get("/edit/:id", (req, res) => {
   hackModel.findOne({ _id: req.params.id }).then(hacks => {
     res.render("edit", { hacks });
@@ -27,7 +27,7 @@ router.put("/:id", (req, res) => {
 });
 //Delete Route
 router.delete("/:id", (req, res) => {
-  hackModel.deleteOne({ _id: req.params.id }).then(() => {
+  hackModel.findOneAndDelete({ _id: req.params.id }).then(() => {
     res.redirect("/");
   });
 });
