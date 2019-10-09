@@ -12,12 +12,12 @@
             <label for="author">Asked By:</label>
             <input type="text" class="form-control" name="asker" value="{{author}}" required>
         </div>
-        <div class="form-group">
+        <div id="answerArea" class="form-group">
             <label for="bodyBox">Answer:</label>
-            <textarea class="form-control" name="Answer area" rows="3" required>{{this.body}}</textarea>
+            <textarea class="form-control" name="Answer area" rows="4" required>{{this.body}}</textarea>
         </div>
 
-        <input type="submit" class="btn btn-dark" value="Edit Answer"/>
+        <input type="submit" class="btn btn-dark" value="Edit Answer" />
     </form>
 </div>
 {{/with}}
