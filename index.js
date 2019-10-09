@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.set("view engine", "hbs");
 app.use(methodOverride("_method"));
-app.use('/assets', express.static('public'))
+app.use("/assets", express.static("public"));
 
 //local host
 app.listen(5000, () => console.log("connected on 5000"));

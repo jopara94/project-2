@@ -13,3 +13,6 @@ button {
   text-decoration: none;
   background-color: transparent;
 }
+#aboutText {
+  text-align: center;
+}
