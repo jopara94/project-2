@@ -1,17 +1,17 @@
 <h1>Here To Help Developers</h1>
 
 <div class="container d-flex flex-column align-items-center">
-    {{#each hacks}}
+    {{#each hacks as |hacks|}}
     <div id="card" class="card card-body" style="width: 45vw;">
         <div>
             <h5>Question:</h5>
-            <p>{{title}}</p>
+            <p>{{hacks.title}}</p>
         </div>
         <h5>Asked By:</h5>
-        <p>{{author}}</p>
+        <p>{{hacks.author}}</p>
         <h5>Answers</h5>
 
-        <p>{{body}}</p>
+        <p>{{hacks.body}}</p>
         <a class="btn btn-dark btn-block mb-2" href="edit/{{id}}">Answer It</a>
         
         <form action="/{{id}}?_method=DELETE" method="post">
