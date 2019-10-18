@@ -2,12 +2,12 @@
 
 ## Hack Overflow
 
-- This project is a remake of Stack Overflow using Node.js, Express.js, Handlebars.js, MongoDB, and Mongoose to give it full CRUD capability.
+- This project is a remake of Stack Overflow.
 
 
 ## Technology Used
 
-- Project was created using HTML, CSS, JavaScript, Express, Mongodb and Handlebars
+- Project was created using HTML, CSS, JavaScript, Node.js, Express.js, Handlebars.js, MongoDB, and Mongoose to give it full CRUD capability.
 - Project will be deployed via Heroku
 
 ## Features
