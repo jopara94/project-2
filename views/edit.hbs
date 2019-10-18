@@ -2,19 +2,19 @@
 <div style="width: 40vw">
     <h2>Answer Question:</h2>
 
-    <form action="/{{this.id}}?_method=put" method="post">
+    <form action="/{{id}}?_method=put" method="post">
 
         <div class="form-group">
             <label for="question">Question:</label>
-            <input type="text" class="form-control" name="question" value="{{this.title}}" required>
+            <input type="text" class="form-control" name="title" value="{{title}}" required>
         </div>
         <div class="form-group">
             <label for="author">Asked By:</label>
-            <input type="text" class="form-control" name="asker" value="{{this.author}}" required>
+            <input type="text" class="form-control" name="author" value="{{author}}" required>
         </div>
         <div id="answerArea" class="form-group">
             <label for="bodyBox">Answer:</label>
-            <textarea class="form-control" name="Answer area" rows="4" required>{{this.body}}</textarea>
+            <textarea class="form-control" name="body" rows="3" required>{{body}}</textarea>
         </div>
 
         <input type="submit" class="btn btn-dark" value="Edit Answer" />

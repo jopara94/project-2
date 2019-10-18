@@ -4,7 +4,7 @@ const seedData = require("./seeds.json");
 hackModel
   .deleteMany({})
   .then(() => {
-    return hackModel.insertMany(seedData);
+    return hackModel.collection.insertMany(seedData);
   })
   .then(() => {
     console.log("seeded with data");
