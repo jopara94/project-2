@@ -2,7 +2,7 @@
 
 ## Hack Overflow
 
-- This site is a remake of Stack Overflow using CRUD
+- This project is a remake of Stack Overflow using Node.js, Express.js, Handlebars.js, MongoDB, and Mongoose to give it full CRUD capability.
 
 
 ## Technology Used
