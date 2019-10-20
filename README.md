@@ -2,6 +2,10 @@
 
 ## Hack Overflow
 
+![](Screenshot 2019-10-20 11.46.38.png)
+
+## Overview
+
 - This project is a simple remake of Stack Overflow. Users can ask questions about software problems and leave their prospective answers, and correct other user's answers. 
 
 
