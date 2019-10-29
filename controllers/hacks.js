@@ -1,8 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const hackModel = require("../models/hackModel");
+// This should just be at the bottom of the file!
 module.exports = router;
 
+// I would have one space between each route
 //Homepage Route
 router.get("/", (req, res) => {
   hackModel
@@ -42,6 +44,7 @@ router.get("/new", (req, res) => {
 });
 
 router.post("/", (req, res) => {
+  // Nice job adding validation! I would add in flash messages so that the user sees an error if they forget a field
   let err = [];
   if (!req.body.title || !req.body.author || !req.body.body) {
     err.push("All fields must be filled");
